@@ -1147,3 +1147,37 @@ footer {
         max-width: 100%;
     }
 }
+
+.team-members {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.team-member {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.team-member .about-image-large {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.team-member .about-text {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+    }
+    
+    .team-member {
+        margin-bottom: 2rem;
+    }
+}
